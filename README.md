@@ -1,15 +1,38 @@
-# SFND 2D Feature Tracking
+# Camera Feature Tracking and Algorithms Review
 
 <img src="images/keypoints.png" width="820" height="248" />
 
-The idea of the camera course is to build a collision detection system - that's the overall goal for the Final Project. As a preparation for this, you will now build the feature tracking part and test various detector / descriptor combinations to see which ones perform best. This mid-term project consists of four parts:
+This project demonstrates multiple algorithms for detecting keypoints in an image and computing a descriptor for it. It then also illustrates how to track those features through multiple frame. The idea is to track keypoints within each bounding-box that contains an object of interest and thus compute time-to-collision (TTC) for each object as the distance between keypoints increases/decreases. 
 
-* First, you will focus on loading images, setting up data structures and putting everything into a ring buffer to optimize memory load. 
-* Then, you will integrate several keypoint detectors such as HARRIS, FAST, BRISK and SIFT and compare them with regard to number of keypoints and speed. 
-* In the next part, you will then focus on descriptor extraction and matching using brute force and also the FLANN approach we discussed in the previous lesson. 
-* In the last part, once the code framework is complete, you will test the various algorithms in different combinations and compare them with regard to some performance measures. 
+# Project Details
 
-See the classroom instruction and code comments for more details on each of these parts. Once you are finished with this project, the keypoint matching part will be set up and you can proceed to the next lesson, where the focus is on integrating Lidar points and on object detection using deep-learning. 
+## Data Ring Buffer  
+I implemented a Ring Buffer for storing 'n' number of images at a time. This is very useful in the situations where you might need multiple images in the buffer at a time. It also avoids the issues of memory running over in the situations where you might use a vector and push new frames every time they are received. The Ring Buffer implementation is contained in ```ringBuffer.h```. I have implemented the following methods for the ring buffer:
+ 
+ ```
+ getSize() - for getting the number of data contained in buffer    
+ push(data) - for pushing data at the top of the buffer   
+ pop() - for removing the data from the top of the buffer   
+ get(index) - for getting the data at index between 0 to n-1 from the buffer   
+ get_ptr(index) - for getting a pointer to the data at index between 0 to n-1 from the buffer
+ ```
+
+## Keypoint Detection   
+I implemented multiple keypoint detectors that can be selected based on the following keyword string inputs: ```SHITOMASI, HARRIS, FAST, BRISK, ORB, AKAZE, SIFT```. I only consider the keypoints within a certain region of interest (ROI) defined by a rectangle. Idea is to track the keypoints only within the bounding-box that contains vehicles or other objects of interest.  
+
+## Descriptor Extraction and Matching   
+I implemented multiple descriptors extractor that can be selected based on the following keyword string inputs: ```BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT```. Two types matcher, ```Brute-Force``` and ```FLANN``` were implemented, and a k-Nearest Neighbor method were chosen with k=2 to select best two matches and then descriptor distance ratio test was used with the ratio being 0.8 to select the best match of two as the match. Matcher, Descriptor type and Selector can be selected using a string keyword.     
+
+![](./images/matching_points.png)
+
+## Performance Evaluation for the Best Keypoint Detector and Descriptor Extraction algorithms  
+The program was run for 10 continuous frames and keypoints within the ROI rectangle were logged and tracked through the frames. All the execution timing were logged as well. All the logs can be found as a spreadsheet in ```comparision/Feature_Tracking_Compare_Sheet.xlsx```. The average number of keypoints, matched keypoints, keypoint detection timing, and descriptor extraction timing were plotted for all the combination of keypoint detector and descriptor extractor as shown below.
+
+![](./comparision/algorithms_comparision_chart.png)  
+
+Based on the chart, here are the top 3 choices of keypoint detector and descriptor extractor:  
+
+![](./comparision/top3_algorithm_conclusion.png) 
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
