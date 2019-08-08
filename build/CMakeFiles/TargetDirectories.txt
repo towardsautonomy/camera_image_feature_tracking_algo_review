@@ -1,3 +1,3 @@
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/build/CMakeFiles/edit_cache.dir
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/build/CMakeFiles/rebuild_cache.dir
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/build/CMakeFiles/2D_feature_tracking.dir
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/build/CMakeFiles/edit_cache.dir
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/build/CMakeFiles/rebuild_cache.dir
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/build/CMakeFiles/2D_feature_tracking.dir

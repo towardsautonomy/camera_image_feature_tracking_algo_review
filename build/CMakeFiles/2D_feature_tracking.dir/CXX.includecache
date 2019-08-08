@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/dataStructures.h
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/dataStructures.h
 vector
 -
 opencv2/core.hpp
 -
 
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/main.cpp
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/main.cpp
 iostream
 -
 fstream
@@ -40,19 +40,19 @@ opencv2/xfeatures2d.hpp
 opencv2/xfeatures2d/nonfree.hpp
 -
 dataStructures.h
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/dataStructures.h
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/dataStructures.h
 matching2D.hpp
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/matching2D.hpp
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/matching2D.hpp
 ringBuffer.h
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/ringBuffer.h
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/ringBuffer.h
 
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/matching2D.cpp
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/matching2D.cpp
 numeric
 -
 matching2D.hpp
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/matching2D.hpp
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/matching2D.hpp
 
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/matching2D.hpp
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/matching2D.hpp
 stdio.h
 -
 iostream
@@ -80,9 +80,9 @@ opencv2/xfeatures2d.hpp
 opencv2/xfeatures2d/nonfree.hpp
 -
 dataStructures.h
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/dataStructures.h
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/dataStructures.h
 
-/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/ringBuffer.h
+/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/ringBuffer.h
 iostream
 -
 algorithm

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/main.cpp" "/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/build/CMakeFiles/2D_feature_tracking.dir/src/main.cpp.o"
-  "/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/src/matching2D.cpp" "/home/shubham/workspace/udacity/sensor_fusion/SFND_2D_Feature_Tracking/build/CMakeFiles/2D_feature_tracking.dir/src/matching2D.cpp.o"
+  "/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/main.cpp" "/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/build/CMakeFiles/2D_feature_tracking.dir/src/main.cpp.o"
+  "/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/src/matching2D.cpp" "/home/shubham/workspace/udacity/sensor_fusion/camera_image_feature_tracking_algo_review/build/CMakeFiles/2D_feature_tracking.dir/src/matching2D.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
